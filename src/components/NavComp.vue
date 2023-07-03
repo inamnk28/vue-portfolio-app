@@ -31,7 +31,7 @@
 </nav>
 </template>
 <style>
-    .navbar-nav {
-        
-    }
+ nav {
+    height: 60px;
+ }
 </style>
