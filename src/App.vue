@@ -1,14 +1,19 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <NavComp/>
+    <FooterComp/>
 </template>
+<script>
+import NavComp from '@/components/NavComp.vue'
+import FooterComp from '@/components/FooterComp.vue'
+export default {
+  components: {NavComp, FooterComp}
+}
+</script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: montserrat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
