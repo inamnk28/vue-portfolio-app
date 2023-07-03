@@ -1,0 +1,136 @@
+<template>
+    <div class="container my-5">
+        <div class="contact">
+            <h3>Get in Touch</h3>
+            <p><img height="15" src="https://img.icons8.com/ios/50/marker--v1.png" alt="marker--v1"/> 2826 Uxolo St, Old Cross Roads, Cape Town</p>
+            <p><img height="15" src="https://img.icons8.com/ios/50/phone--v1.png" alt="phone--v1"/> +27 63 304 6337</p>
+            <p><img height="15" src="https://img.icons8.com/ios/50/mail.png" alt="mail"/> inamnkabi1@gmail.com</p>
+        </div>
+        <div class="exact-contact">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.8588560730477!2d18.601187275265726!3d-33.99615897317811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc459d6c1e5c75%3A0x35d45f12a795aa6d!2s2826%20Uxolo%20St%2C%20Crossroads%2C%20Cape%20Town%2C%207750!5e0!3m2!1sen!2sza!4v1688380510541!5m2!1sen!2sza" width="600"  height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form">
+                                <form
+  action="https://formspree.io/f/xayzrnye"
+  method="POST"
+>
+
+    <div class="mb-3 contact">
+        <input type="text" name="fullName">
+        <span>Your Full Name</span>
+      </div>
+    <div class="mb-3 contact">
+      <input type="email"  id="exampleInputEmail1" aria-describedby="emailHelp">
+      <span>Email Address</span>
+    </div>
+    <div class="mb-3 contact">
+        <textarea name="" id="message"></textarea>
+        <span>Your Message here...</span>
+    </div>
+    <button type="submit" class="bg-black text-white px-3 py-1 border-0 fw-bold">Submit</button>
+</form>
+            </div>
+        </div>
+    </div>
+</template>
+<style scoped>
+  .contact input {
+    width: 100% !important;
+    padding: 5px 0 !important;
+    font-size: 15px !important;
+    margin: 10px 0;
+    border: none !important;
+    border-bottom: 2px solid black !important;
+    outline: none;
+    border-radius: 0;
+    resize: none;
+}
+@media screen and (max-width: 650px) {
+    iframe {
+        width: 550px;
+    }
+    .form {
+        min-width: 550px;
+    }
+}
+@media screen and (max-width: 600px) {
+    iframe {
+        width: 500px;
+    }
+    .form {
+        min-width: 500px;
+    }
+}
+@media screen and (max-width: 550px) {
+    iframe {
+        width: 450px;
+    }
+    .form {
+        min-width: 450px;
+    }
+}
+@media screen and (max-width: 480px) {
+    iframe {
+        width: 400px;
+    }
+    .form {
+        min-width: 400px;
+    }
+}
+@media screen and (max-width: 420px) {
+    iframe {
+        width: 350px;
+    }
+    .form {
+        min-width: 350px;
+    }
+}
+@media screen and (max-width: 380px) {
+    iframe {
+        width: 300px;
+    }
+    .form {
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 320px) {
+    iframe {
+        width: 280px;
+    }
+    .form {
+        min-width: 280px;
+    }
+}
+form {
+    width: 100%;
+}
+.form {
+    margin-top: 3rem;
+    width: 600px;
+}
+.contact textarea {
+    width: 100% !important;
+    padding: 5px 0 !important;
+    font-size: 15px !important;
+    margin: 10px 0;
+    border: none !important;
+    border-bottom: 2px solid black !important;
+    outline: none;
+    resize: none;
+}
+.exact-contact {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contact span {
+    position: relative ;
+    left: 0;
+    padding: 5px 0 !important;
+    font-size: 15px !important;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;  
+}
+</style>

@@ -20,6 +20,7 @@
   }
   .container {
     margin-block: 60px;
+    text-align: center;
     /* background-color: blue; */
   }
   .description {
