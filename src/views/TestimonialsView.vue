@@ -20,7 +20,8 @@ export default {
 </script>
 <style scoped>
    .tests {
-    width: 100vw;
+    width: 100%;
+    margin-inline: 0;
     background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
    }
    .comp {
