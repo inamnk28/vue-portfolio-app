@@ -16,10 +16,12 @@ export default {
 </script>
 <style scoped>
    .card {
-    position: relative;
+    /* position: relative; */
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
     width: 400px;
     overflow: hidden;
-    box-shadow: 0px 2pxm 3px black;
+    border: none;
+    /* box-shadow: 0px 2px 3px black; */
    }
    @media screen and (max-width: 480px) {
     .card {
@@ -47,7 +49,7 @@ export default {
     filter: blur(5px);
    }
    .card .image img {
-    width: 400px;
+    width: 100%;
     height: auto;
     transition: transform 1s;
    }

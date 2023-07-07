@@ -4,7 +4,7 @@
       <div class="description col-lg-6 col-md-6 col-sm-12">
       <h2 class="fs-1 text-uppercase fw-bolder" id="name">Inam Nkabi</h2>
       <p class="fs-4 fw-bold text-center text-white text-wrap">A results-orientated Front-End Developer based in Cape Town focused on writing clean and elegant code.</p>
-      <button><router-link to="/resume" class="text-white text-decoration-none fw-bold" >Resume</router-link></button>
+      <button><a class="fw-bolder text-decoration-none text-white" target="_blank" href="https://drive.google.com/file/d/1PMyiiP8a38ETBFqnuzC7jlafVvcKNfZa/view?usp=drive_link">Resume</a></button>
     </div>
     <div class="my-image col-lg-6 col-md-6 col-sm-12">
       <img src="https://i.postimg.cc/13ddfcPy/IMG-20230213-WA0030.jpg" alt="">
