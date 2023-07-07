@@ -1,7 +1,8 @@
 <template>
-    <div class="container my-5">
+    <div class="container">
+        <div class="containe py-5 ">
         <div class="contact">
-            <h3>Get in Touch</h3>
+            <h3 class="fw-bold">Get in Touch</h3>
             <p><img height="15" src="https://img.icons8.com/ios/50/marker--v1.png" alt="marker--v1"/> 2826 Uxolo St, Old Cross Roads, Cape Town</p>
             <p><img height="15" src="https://img.icons8.com/ios/50/phone--v1.png" alt="phone--v1"/> +27 63 304 6337</p>
             <p><img height="15" src="https://img.icons8.com/ios/50/mail.png" alt="mail"/> inamnkabi1@gmail.com</p>
@@ -13,19 +14,19 @@
             <div class="form">
                                 <form
   action="https://formspree.io/f/xayzrnye"
-  method="POST"
+  method="POST" @submit="formValidation"
 >
 
     <div class="mb-3 contact">
-        <input type="text" name="fullName">
+        <input type="text" name="fullName" v-model="fullName" required>
         <span>Your Full Name</span>
       </div>
     <div class="mb-3 contact">
-      <input type="email"  id="exampleInputEmail1" aria-describedby="emailHelp">
+      <input type="email"  id="exampleInputEmail1" aria-describedby="emailHelp" v-model="email" required>
       <span>Email Address</span>
     </div>
     <div class="mb-3 contact">
-        <textarea name="" id="message"></textarea>
+        <textarea name="" id="message" v-model="message" required></textarea>
         <span>Your Message here...</span>
     </div>
     <button type="submit" class="bg-black text-white px-3 py-1 border-0 fw-bold">Submit</button>
@@ -33,8 +34,70 @@
             </div>
         </div>
     </div>
+    </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            fullName: '',
+            email: '',
+            message: ''
+        };
+    },
+    methods: {
+        formValidation(event) {
+            if(!this.fullName || !this.email || !this.message) {
+                event.preventDefault();
+                alert('Please fill in all required fields.')
+            }
+        }
+    }
+}
+</script>
 <style scoped>
+button {
+  animation: wiggle 2s linear infinite;
+}
+.contact {
+    animation: fadeInDown; 
+    animation-duration: 2s;
+}
+.form {
+    animation: fadeInRight; 
+  animation-duration: 2s;
+}
+.map {
+  animation: fadeInLeft; 
+  animation-duration: 2s;
+}
+/* Keyframes */
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+.containe {
+    
+}
   .contact input {
     width: 100% !important;
     padding: 5px 0 !important;

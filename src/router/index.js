@@ -14,16 +14,31 @@ const routes = [
     component: () => import('../views/ContactView.vue')
   },
   {
-    path: '/testimonials',
-    name: 'testimonials'
-  },
-  {
     path: '/resume',
-    name: 'resume'
+    name: 'resume',
+    component: () => import('../views/ResumeView.vue')
   },
   {
     path: '/projects',
-    name: 'projects'
+    name: 'projects',
+    component: () => import('../views/ProjectsView.vue')
+  },
+  {
+    path: '/projects/:id',
+    name: 'project',
+    component: () => import('../components/ProjectsComp.vue'),
+    props: true,
+  },
+  {
+    path: '/testimonials',
+    name: 'testimonials',
+    component: () => import('../views/TestimonialsView.vue')
+  },
+  {
+    path: '/testimonials/:id',
+    name: 'testimonial',
+    component: () => import('../components/TestimonialsComp.vue'),
+    props: true,
   },
   {
     path: '/about',
